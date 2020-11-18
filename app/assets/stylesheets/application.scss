@@ -11,3 +11,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.container {
+  display: flex;
+  text-align: center;
+
+}
+
+.card {
+  display:flex;
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  justify-content:space-between;
+}

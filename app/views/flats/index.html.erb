@@ -1,7 +1,19 @@
-<h1>all flats</h1>
+<div class="container">
+  <div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <h1>all ours flats (<%= @flats.count %>)</h1>
 
-<ul>
-<% @flats.each do |flat|%>
-  <li><%= flat.name %></li>
-  <% end %>
-</ul>
+      <ul>
+    <div class="card br-2">
+      <% @flats.each do |flat|%>
+        <li class="title"><%= flat.name %></li>
+        <p><%= flat.address %></p>
+        <p><%= flat.price_per_night %></p>
+        <p><%= flat.number_of_guests %></p>
+        <%= link_to "More info", flat_path(flat) %>
+        <% end %>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
